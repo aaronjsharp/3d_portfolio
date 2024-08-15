@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
   return (
@@ -15,11 +14,15 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className='text-[#915eff]'>Aaron</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop Web3 tech, user <br className='sm:block hidden'/>interfaces, and web applications
+            I develop full stack applications, sleek user <br className='sm:block hidden'/>interfaces, and dynamic web applications
           </p>
         </div>
+        <img
+        src='../../profile.png'
+      />
       </div>
-      <ComputersCanvas />
+      
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

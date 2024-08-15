@@ -21,8 +21,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import solidity from "./tech/solidity.svg";
+import landingPage from "./saas_landing_page_site.png"
 
-
+import discord from "./discord.png"
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -43,8 +44,18 @@ import website from './website.png';
 import crowdfunding from './crowdfunding.png';
 import ashley from './ashley.jpg';
 import loren from './loren.jpg';
+import computer_logo from './computer_logo.png';
+import uniswap2 from './uniswap2.png';
+import venmo from './venmo.png';
+import messenger from './messenger.png';
 
 export {
+  landingPage,
+  discord,
+  messenger,
+  venmo,
+  uniswap2,
+  computer_logo,
   loren,
   ashley,
   crowdfunding,
