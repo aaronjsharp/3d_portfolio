@@ -48,8 +48,10 @@ import computer_logo from './computer_logo.png';
 import uniswap2 from './uniswap2.png';
 import venmo from './venmo.png';
 import messenger from './messenger.png';
+import financeApp from './finance_app.png'
 
 export {
+  financeApp,
   landingPage,
   discord,
   messenger,

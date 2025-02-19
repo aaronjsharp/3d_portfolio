@@ -41,7 +41,8 @@ import {
   loren,
   uniswap2,
   discord,
-  landingPage
+  landingPage,
+  financeApp
 } from "../assets";
 
 export const navLinks = [
@@ -233,7 +234,29 @@ const projects = [
       "This is a landing page designed to showcase my frontend skills. I used NextJS as the framework and Framer Motion for the animations. You will notice some cool parallax effects on the images, as well as eyecatching scrolling in several sections. The navbar is sticky and blurred as you scroll down the page.",
     tags: [
       {
-        name: "react",
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "framermotion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "frontend",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: landingPage,
+    source_code_link: "https://github.com/aaronjsharp/light_saas_landing_page",
+    website_link: "https://aaron-sharp-landing-page.vercel.app/",
+  },
+  {
+    name: "Finance tracking app",
+    description:
+      "A simple finance app that allows users to track financial transactions and displays the data in a variety of graph formats. Users can also import financial statements from a comma separated file",
+    tags: [
+      {
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
@@ -245,10 +268,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: landingPage,
+    image: financeApp,
     source_code_link: "https://github.com/aaronjsharp/light_saas_landing_page",
     website_link: "https://aaron-sharp-landing-page.vercel.app/",
-  }
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
