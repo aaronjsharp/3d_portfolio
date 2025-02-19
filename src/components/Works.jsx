@@ -8,6 +8,14 @@ import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, website_link }) => {
+  let windowOpened = false;
+
+  function openWindowOnce(url) {
+    if (!windowOpened) {
+      window.open(url, '_blank');
+      windowOpened = true;
+    }
+  }
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
@@ -18,7 +26,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]' onClick={() => window.open(website_link, "_blank")}>
+        <div className='relative w-full h-[230px]' >
           <img 
             src={image}
             alt={name}
@@ -27,7 +35,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => openWindowOnce(source_code_link) }
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img 
